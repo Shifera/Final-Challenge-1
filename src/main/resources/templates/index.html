@@ -3,63 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <title>Java Boot Camp page</title>
-    <style>
-        div {
-            margin: auto;
-            width: 200%;
-            border: 3px solid green;
-            padding: 10px;
-        }
 
-        h6{
-            font-size:30px;
-        }
-        p{
-            color:blue;
-        }
-        a:hover{
-            color:hotpink;
-        }
-        a:visited{
-            color:green;
-        }
-    </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 </head>
+
+<!--<body background="https://p0.piqsels.com/preview/368/406/379/vintage-interior-furniture-commode.jpg">-->
+<style>
+    #block_container {
+        text-align: center;
+    }
+    #block_container > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    div {
+        margin:auto;
+        width: 100%;
+        border: 1px solid green;
+        padding: 10px;
+        text-align: center;
+        background-color: lightgray;
+    }
+    h1{
+        color: black;
+    }
+    p{
+        color: brown;
+    }
+    h6{
+        font-size:30px;
+    }
+    p{
+        color:blue;
+    }
+    a:hover{
+        color:hotpink;
+    }
+    a:visited{
+        color:green;
+    }
+</style>
+
+</div>
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+</body>
+
 <body>
-
-<!--<div th:replace="base :: navbar"></div>-->
-<!--<br>-->
-
 
 <div class="jumbotron">
     <h1 class="display-4">Welcome to America's Promise program at MC!</h1>
     <p class="lead">America’s Promise Job-Driven Grant Program is a tuition-free jobs training
         program designed to strengthen the pipeline of skilled workers...</p>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Author</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Apply</a>
+            </li>
+        </ul>
+
+    </nav>
     <hr class="my-4">
-    </div>
-<!--    <p >Please click on the portfolio page or click the button below to learn more-->
-<!--        about my education and experience.</p>-->
-<!--    <a class="btn btn-warning btn-lg" href="/portfolio" role="button">View more</a>-->
+</div>
 
 
-    <br/>
-    <br/>
-    <br/>
+<br/>
+<br/>
+<br/>
 
 
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">What is GitHub?</h5>
-            <p class="card-text">GitHub is a web based version-control and collaboration platform for software developers.
-                GitHub, which is delivered through a software as a service (SaaS) business model was started in 2008
-                and was founded on Git...</p>
-            <a href="#" class="btn btn-primary">View more</a>
-        </div>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">What is GitHub?</h5>
+        <p class="card-text">GitHub is a web based version-control and collaboration platform for software developers.
+            GitHub, which is delivered through a software as a service (SaaS) business model was started in 2008
+            and was founded on Git...</p>
+        <a href="#" class="btn btn-primary">View more</a>
     </div>
 </div>
-    <div class="card" style="width: 18rem;">
+</div>
+<div class="card" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title">How to Push to GitHub?</h5>
         <p class="card-text">First, sign up for an account on GitHub, Create a new repository,...</p>
@@ -140,19 +176,13 @@
 </div>
 </div>
 
-<!--<div class="jumbotron jumbotron-fluid">-->
-<!--    <div class="container">-->
-<!--        <p class="display-6">Please click the buttons below to view all the IT projects-->
-<!--            I have done on my github page and to consider me for any related opportunity</p></p>-->
-<!--        <a href="https://github.com/Shifera?tab=repositories/" class="btn btn-warning"> please view my projects on my github page </a>-->
-<!--    </div>-->
-<!--</div>-->
 
-<!--<div th:replace="base :: footer"> </div>-->
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
+<!--<body background="https://p0.piqsels.com/preview/368/406/379/vintage-interior-furniture-commode.jpg" width="542" height="500" style="">-->

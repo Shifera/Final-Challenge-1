@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pushing to gitHub</title>
+</head>
+<body>
+<h1>How to push to gitHub ?</h1>
+<h4>When you are at a new machine,
+    you want to configure yourself as the author of the projects.
+    Do this by running the following commands: </h4>
+<p> git config --global user.name "your-github-name"</p>
+<p> git config --global user.email your-github-email</p>
+<p><h4>When you are ready to push your project to Github,
+    press Alt+F12 in IntelliJ to open the terminal window.
+    You can see that we are already in the current project folder.
+For instance, if my project was named SpringBoot_102, you would see: </h4></p>
+<p>C:\Users\GBTC406001ur\IdeaProjects\SpringBoot_102></p>
+<h4>Once we confirm that we are in the right directory, type the following to link your Github repository with the local project.This is also the link you would be submitting to Canvas :</h4>
+<p>git init</p>
+<p>git remote add origin your-github-repository-link</p>
+<h4>To add and commit your work, and push it to Github, type the following commands:</h4>
+<p>git add .</p>
+<p>git commit -m "whatever-commit-message"</p>
+<p>git push -u origin master</p>
+<h4>Let's say you want to work on this project on your home computer.
+    You then have to "pull" what you "pushed" earlier.
+    Run this command, then click anywhere on your IntelliJ workspace to load the changes:</h4>
+<p>git pull</p>
+</body>
+</html>
