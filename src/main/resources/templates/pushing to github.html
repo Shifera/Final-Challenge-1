@@ -3,29 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Pushing to gitHub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+<style>
+    body {
+        background: lightblue url("http://phiind.co/wp-content/uploads/2018/10/gray-malin-beaches-gray-second-book-brings-escapist-fun-to-the-coffee-table-gray-malin-coogee-beach-print.jpg") no-repeat fixed center;
+
+    }
+
+
+</style>
+
+
 <body>
+
+<br/>
 <h1>How to push to gitHub ?</h1>
+<br/>
+<br/>
 <h4>When you are at a new machine,
     you want to configure yourself as the author of the projects.
     Do this by running the following commands: </h4>
+<br/>
 <p> git config --global user.name "your-github-name"</p>
 <p> git config --global user.email your-github-email</p>
-<p><h4>When you are ready to push your project to Github,
+<h6>When you are ready to push your project to Github,
     press Alt+F12 in IntelliJ to open the terminal window.
-    You can see that we are already in the current project folder.
-For instance, if my project was named SpringBoot_102, you would see: </h4></p>
+</h6>
+<br/>
 <p>C:\Users\GBTC406001ur\IdeaProjects\SpringBoot_102></p>
-<h4>Once we confirm that we are in the right directory, type the following to link your Github repository with the local project.This is also the link you would be submitting to Canvas :</h4>
+<h6>Once we confirm that we are in the right directory, type the following to link your Github repository with the local project.</h6>
+<br/>
 <p>git init</p>
 <p>git remote add origin your-github-repository-link</p>
-<h4>To add and commit your work, and push it to Github, type the following commands:</h4>
+<h6>To add and commit your work, and push it to Github, type the following commands:</h6>
+<br/>
 <p>git add .</p>
 <p>git commit -m "whatever-commit-message"</p>
 <p>git push -u origin master</p>
-<h4>Let's say you want to work on this project on your home computer.
+<h6>Let's say you want to work on this project on your home computer.
     You then have to "pull" what you "pushed" earlier.
-    Run this command, then click anywhere on your IntelliJ workspace to load the changes:</h4>
+    Run this command, then click anywhere on your IntelliJ workspace to load the changes:</h6>
+<br/>
 <p>git pull</p>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
