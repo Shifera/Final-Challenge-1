@@ -1,0 +1,72 @@
+
+    <!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+        <title>Bootcamplist</title>
+        <style>
+
+            p{
+                color:blue;
+                align-content: center;
+            }
+            a:hover{
+                color:hotpink;
+            }
+            a:visited{
+                color:green;
+            }
+            h1{
+                color:deepskyblue;
+            }
+        </style>
+    </head>
+<body>
+<div th:replace="base :: navbar"></div>
+<h1> Bootcamp List </h1>
+<a href="/add">Add a bootCamp</a><br />
+<table>
+    <tr>
+        <th>FistName</th>
+        <th>LastName/th>
+        <th>Email</th>
+        <th>DateofBirth</th>
+        <th>Phone</th>
+        <td><b>Veteran</b></td>
+        <td><b>WhichBootCampwouldyouliketoapply</b></td>
+        <td><b>WorkPermit</b></td>
+        <td><b>DegeeEarned</b></td>
+        <td><b>NameofSchool</b></td>
+        <td><b>AreYouEmployed</b></td>
+        <td><b>Actions</b></td>
+    </tr>
+
+    <div th:each="bootCamp:${bootCamps}">
+        <td th:text="${bootCamp.whichBootCampwouldyouliketoapply}"></td>
+        <td th:text="${bootCamp.FirstName}"></td>
+        <td th:text="${bootCamp.LastName}"></td>
+        <td th:text="${bootCamp.Phone}"></td>
+        <td th:text="${bootCamp.Email}"></td>
+        <td th:text="${bootCamp.Veteran}"></td>
+        <td th:text="${bootCamp.WorkPermit}"></td>
+        <td th:text="${bootCamp.DegeeEarned}"></td>
+        <td th:text="${bootCamp.NameofSchool}"></td>
+        <td th:text="${bootCamp.AreYouEmployed}"></td>
+        <td th:text="${bootCamp.DateofBirth}"></td>
+        <td>
+            <a th:href="@{/update/{id}(id=${bootCamp.id})}">Update</a>
+            <a th:href="@{/detail/{id}(id=${bootCamp.id})}">Details</a>
+            <a th:href="@{/delete/{id}(id=${bootCamp.id})}">Delete</a>
+
+        </td>
+
+    </div>
+<!--</table>-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+</table>
+</body>
+</html>

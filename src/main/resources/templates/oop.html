@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Algorithm</title>
@@ -23,44 +23,24 @@
 
 </head>
 <body>
+<div th:replace="base :: navbar"></div>
+<h1>OOP </h1>
 
-<h1>What is Algorithm?</h1>
+<p>Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields
+    (often known as attributes or properties), and code, in the form of procedures (often known as methods). A feature of objects is an object's
+    procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self").
+    In OOP, computer programs are designed by making them out of objects that interact with one another.[1][2] OOP languages are diverse, but the most
+    popular ones are class-based, meaning that objects are instances of classes, which also determine their types.</p>
 
-<nav class="navbar navbar-expand-sm bg-light">
+<p>Many of the most widely used programming languages (such as C++, Java, Python, etc.) are multi-paradigm and they support object-oriented programming
+    to a greater or lesser degree, typically in combination with imperative, procedural programming. Significant object-oriented languages include Java,
+    C++, C#, Python, PHP, JavaScript, Ruby, Perl, Object Pascal, Objective-C, Dart, Swift, Scala, Common Lisp, MATLAB, and Smalltalk.</p>
+<p>12/12/2019</p>
+<br/>
 
-    <!-- Links -->
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Author</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Apply</a>
-        </li>
-    </ul>
 
-</nav>
-<p>Algorithm is unambiguous finite step by step procedure which is given input to produce output.
-    Algorithms are essential to the way computers process data.</p>
-<p> Many computer programs contain algorithms that detail the specific instructions
-    a computer should perform—in a specific order—to carry out a specified task,
-    such as calculating employees' paychecks or printing students' report cards.</p>
 
-<p>One of the simplest algorithms is to find the largest number in a list of numbers of random order.
-    Finding the solution requires looking at every number in the list.
-    From this follows a simple algorithm, which can be stated in
-    a high-level description in English prose, as:
-    High-level description:</p>
-<p>
-    If there are no numbers in the set then there is no highest number.
-    Assume the first number in the set is the largest number in the set.
-    For each remaining number in the set: if this number is larger than the current largest number,
-    consider this number to be the largest number in the set.
-    When there are no numbers left in the set to iterate over,
-    consider the current largest number to be the largest number of the set.
-</p>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

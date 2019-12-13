@@ -16,7 +16,6 @@ public class BootCamp {
     @NotNull
     @Size(min = 2)
     private String WhichBootCampwouldyouliketoapply;
-
     @NotNull
     @Size(min = 2)
     private String FirstName;
@@ -29,33 +28,45 @@ public class BootCamp {
     private String Email;
 
     @NotNull
-    @Min(10)
     private int Phone;
 
     @NotNull
-    @Min(6)
-    private int DateofBirth;
 
+    private int DateofBirth;
     @NotNull
-    @Size(min = 1)
     private boolean WorkPermit;
 
     @NotNull
-    @Size(min = 1)
     private boolean Veteran;
 
     @NotNull
-    @Size(min = 1)
     private boolean AreYouEmployed;
 
     @NotNull
-    @Size(min = 1)
+    @Size(min = 2)
     private String NameofSchool;
 
     @NotNull
     @Size(min = 1)
     private String DegreeEarned;
 
+
+    public BootCamp() {
+    }
+
+    public BootCamp(@NotNull @Size(min = 2) String whichBootCampwouldyouliketoapply, @NotNull @Size(min = 2) String firstName, @NotNull @Size(min = 2) String lastName, @NotNull @Size(min = 1) String email, @NotNull int phone, @NotNull int dateofBirth, @NotNull boolean workPermit, @NotNull boolean veteran, @NotNull boolean areYouEmployed, @NotNull @Size(min = 2) String nameofSchool, @NotNull @Size(min = 1) String degreeEarned) {
+        WhichBootCampwouldyouliketoapply = whichBootCampwouldyouliketoapply;
+        FirstName = firstName;
+        LastName = lastName;
+        Email = email;
+        Phone = phone;
+        DateofBirth = dateofBirth;
+        WorkPermit = workPermit;
+        Veteran = veteran;
+        AreYouEmployed = areYouEmployed;
+        NameofSchool = nameofSchool;
+        DegreeEarned = degreeEarned;
+    }
 
     public long getId() {
         return id;
@@ -152,5 +163,4 @@ public class BootCamp {
     public void setDegreeEarned(String degreeEarned) {
         DegreeEarned = degreeEarned;
     }
-
 }
