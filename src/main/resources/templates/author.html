@@ -5,50 +5,113 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
+<style>
+
+    body {
+        background-image: url("https://www.belfontedairy.com/wp-content/uploads/2017/03/light-blue-background-wallpaper-1.jpg");
+        background-color: #cccccc;
+    }
+
+
+    .button {
+        background-color: #4CAF50;
+        border: black;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    body {
+        background-color: lightcyan;
+    }
+    .fakeimg {
+        height: 300px;
+        background: #aaa;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+
+
 <body>
-<div th:replace="base :: navbar"></div>
+
 <h1>Authors profile</h1>
+<div th:replace="base :: navbar"></div>
+<br/>
+<br/>
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
             <h3>Shahla</h3>
             <h5>Title description, Dec 17, 2019</h5>
             <hr class="hidden-sm hidden-md hidden-lg">
-            <img class="irc_mi" src="https://thumbs.dreamstime.com/b/cup-coffee-computer-keyboard-mouse-background-consisting-two-colores-pink-yellow-top-view-copy-space-design-element-146833292.jpg" style="" alt="Image result for coffee and computer background" width="300" height="300">
-            <p>My name is Shahla</p>
+            <img class="irc_mi" src=" https://res.cloudinary.com/ddvxy8rcf/image/upload/v1576253738/IMG_3357001_copy_totb7a.jpg" style="" alt="" width="320" height="300">
+            <p>My name is Shahla. I attended 8 week Java Boot Camp at MC. I have been a teacher at MC for 13 years. I started my own business a few years ago and I am going to
+                apply what I learned here to expand my business in IT field.
+                <br/>
+                <br/>
+                <br/>
+                <a href="https://www.dclanguagesolutions.com/" class="button">My Web</a>
+
+            </p>
         </div>
         <div class="col-sm-4">
             <h3>Shiferaw</h3>
             <h5>Title description, Dec 17, 2019</h5>
             <hr class="hidden-sm hidden-md hidden-lg">
-            <img class="irc_mi" src="https://thumbs.dreamstime.com/b/cup-coffee-computer-keyboard-mouse-background-consisting-two-colores-pink-yellow-top-view-copy-space-design-element-146833292.jpg" style="" alt="Image result for coffee and computer background" width="300" height="300">
-            <p>My name is Shiferaw......</p>
+            <img class="irc_mi" src=" https://res.cloudinary.com/ddvxy8rcf/image/upload/v1576254529/Polish_20191213_112614893_gnq6o7.jpg " style="" alt="" width="320" height="300">
+            <p>My name is Shiferaw. I have successfully attended Java bootcamp at Montgomery College for 8 weeks, I am looking for a position in Software/webdeveloper positions </p>
+            <br/>
+            <br/>
+            <a href="https://github.com/Shifera/Final-Challenge-1" class="button">Git hub</a>
+
         </div>
         <div class="col-sm-4">
             <h3>Hayle</h3>
             <h5>Title description, Dec 17, 2019</h5>
             <hr class="hidden-sm hidden-md hidden-lg">
-            <img class="irc_mi" src="https://thumbs.dreamstime.com/b/cup-coffee-computer-keyboard-mouse-background-consisting-two-colores-pink-yellow-top-view-copy-space-design-element-146833292.jpg" style="" alt="Image result for coffee and computer background" width="300" height="300">
-            <p>My name is Haylemelekot......</p>
+            <img class="irc_mi" src="https://res.cloudinary.com/ddvxy8rcf/image/upload/v1576254999/Polish_20191213_113335965_wyx7ox.jpg" style="" alt="Image result for coffee and computer background" width="320" height="300">
+            <p>My name is Haylemelekot. I attended 8 weeks java boot camp in Montogmory College successfully. I am looking for a position in Software/webdeveloper positions. </p>
+            <br/>
+            <br/>
+            <a href="https://res.cloudinary.com/ddvxy8rcf/image/upload/v1576420888/Screen_Shot_2019-12-15_at_09.36.07_mensea.png"  class="button">Git hub</a>
+
         </div>
     </div>
 </div>
 <br/>
-<br/>
-<br/>
 
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <p>This page is made by those three author and presented at the date December 17, 2019</p>
-</div>
-<ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-</ul>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<s><button onclick="typeWriter()">Copyright</button></s>
 
+<p id="demo"></p>
+
+<script>
+    var i = 0;
+   var txt = 'the web is designed by Shahla, Shiferaw and Hayle in Dec,2019.';
+
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+</script>
+<br/>
 </body>
 </html>

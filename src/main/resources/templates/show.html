@@ -13,17 +13,31 @@
         a:hover{
             color:hotpink;
         }
+       a{
+           text-align: center;
+       }
         a:visited{
             color:green;
         }
         h1{
-            color:deepskyblue;
+            color:black;
+        }
+        body {
+            background-image:url("http://www.bruna.cat/imgdownload/full/130/1304132/sky-blue-background-wallpaper.jpg" ) ;
+
+        }
+        h1 {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-<div th:replace="base :: navbar"></div>
+
 <a href="/">Show All bootCamp</a><br/>
+
+<br/>
+<br/>
+<div th:replace="base :: navbar"></div>
 Fist Name:<span th:text="${BootCamp.FirstName}" ></span><br />
 Last Name :<span th:text="${BootCamp.LastName}" ></span><br />
 Email :<span th:text="${BootCamp.Email}" ></span><br />

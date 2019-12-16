@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
+<style>
+    body {
+        background-image:url("http://www.bruna.cat/imgdownload/full/130/1304132/sky-blue-background-wallpaper.jpg" ) ;
+
+    }
+    h1 {
+        text-align: center;
+    }
+
+</style>
+
+
 <body>
-<div th:replace="base :: navbar"></div>
+
 <h1>What is HTML?</h1>
+<div th:replace="base :: navbar"></div>
+
+<br/>
+<br/>
+
 <p>The main parts of our element are:</p>
 <div><Ul>
     <ol>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets.</ol>
@@ -26,12 +43,51 @@
     <br>
     <ol>The element: The opening tag plus the closing tag plus the content equals the element.</ol>
     </Ul></div>
-
 </p>
-<p>12/12/2019</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+<s><button onclick="typeWriter()">Copyright</button></s>
+
+<p id="demo"></p>
+
+<script>
+    var i = 0;
+    var txt = 'the web is designed by Shahla, Shiferaw and Hayle in Dec,2019.';
+
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+</script>
+<br/>
 
 </body>
 </html>

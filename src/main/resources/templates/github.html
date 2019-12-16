@@ -9,15 +9,37 @@
         h1{
             text-align: center;
         }
+
+        body {
+            background-image:url("http://www.bruna.cat/imgdownload/full/130/1304132/sky-blue-background-wallpaper.jpg" ) ;
+
+        }
     </style>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: lightgreen;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-<div th:replace="base :: navbar"></div>
+
 
 <h1>What is GitHub?</h1>
+<div th:replace="base :: navbar"></div>
+<br/>
+<br/>
+
 
 <p>GitHub is a web based version-control and collaboration platform for software developers.
 
@@ -33,7 +55,7 @@
 
 </p>
 
-<p>12/12/2019</p>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -41,14 +63,10 @@
 <br/>
 <br/>
 <br/>
+
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <br/>
 <br/>
@@ -57,15 +75,34 @@
 <br/>
 <br/>
 
-<ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+<s><button onclick="typeWriter()">Copyright</button></s>
 
+<p id="demo"></p>
+
+<script>
+    var i = 0;
+    var txt = 'the web is designed by Shahla, Shiferaw and Hayle in Dec,2019.';
+
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+</script>
+<br/>
 
 </body>
 </html>
