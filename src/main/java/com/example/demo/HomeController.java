@@ -15,14 +15,14 @@ import javax.validation.Valid;
     BootCampRepository bootCampRepository;
 
     @RequestMapping("/list")
-    public String listJobs(Model model){
+    public String listBootCamps(Model model){
         model.addAttribute("bootCamps", bootCampRepository.findAll());
         return "list";
     }
 
             @RequestMapping("/")
-        public String bootlist(){
-//            model.addAttribute("bootCamp", bootCampRepository.findAll());
+        public String bootCamplist(Model model){
+          model.addAttribute("bootCamp", bootCampRepository.findAll());
             return "index";
         }
     @RequestMapping("/author")
@@ -81,14 +81,14 @@ import javax.validation.Valid;
         return "inheritanceoop";
     }
 
-    @GetMapping("/apply")
+    @GetMapping("/add")
         public String bootCamp(Model model){
             model.addAttribute("bootCamp", new BootCamp());
             return "apply";
         }
 
-        @PostMapping("/process")
-        public String processForm(@Valid @ModelAttribute BootCamp bootCamp, BindingResult result){
+        @PostMapping("/add")
+        public String apply(@Valid @ModelAttribute BootCamp bootCamp, BindingResult result){
             if (result.hasErrors()){
                 return "apply";
             }
@@ -104,7 +104,7 @@ import javax.validation.Valid;
         @RequestMapping("/update/{id}")
         public String updateBootCamp(@PathVariable("id") long id, Model model){
             model.addAttribute("bootCamp", bootCampRepository.findById(id).get());
-            return "jobform";
+            return "apply";
         }
         @RequestMapping("/delete/{id}")
         public String delBootCamp(@PathVariable("id") long id){

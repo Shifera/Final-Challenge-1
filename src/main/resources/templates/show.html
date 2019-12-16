@@ -33,22 +33,20 @@
 </head>
 <body>
 
-<a href="/">Show All bootCamp</a><br/>
-
-<br/>
-<br/>
 <div th:replace="base :: navbar"></div>
-Fist Name:<span th:text="${BootCamp.FirstName}" ></span><br />
-Last Name :<span th:text="${BootCamp.LastName}" ></span><br />
-Email :<span th:text="${BootCamp.Email}" ></span><br />
-Phone :<span th:text="${BootCamp.Phone}" ></span><br />
-DateofBirth :<span th:text="${BootCamp.DateofBirth}" ></span><br />
-WorkPermit :<span th:text="${BootCamp.WorkPermit}" ></span><br />
-Veteran :<span th:text="${BootCamp.Veteran}" ></span><br />
-AreYouEmployed :<span th:text="${BootCamp.AreYouEmployed}" ></span><br />
-DegreeEarned :<span th:text="${BootCamp.DegreeEarned}" ></span><br />
-NameofSchool :<span th:text="${BootCamp.NameofSchool}" ></span><br />
-Fist Name:<span th:text="${BootCamp.WhichBootCampwouldyouliketoapply}" ></span><br />
+
+<a href="/">Show All bootCamp</a><br/>
+Fist Name:<span th:text="${bootCamp.firstName}" ></span><br /><br />
+Last Name :<span th:text="${bootCamp.lastName}" ></span><br />
+Email :<span th:text="${bootCamp.email}" ></span><br />
+Phone :<span th:text="${bootCamp.phone}" ></span><br />
+DateofBirth :<span th:text="${bootCamp.dateofBirth}" ></span><br />
+WorkPermit :<span th:text="${bootCamp.workPermit}" ></span><br />
+Veteran :<span th:text="${bootCamp.veteran}" ></span><br />
+AreYouEmployed :<span th:text="${bootCamp.areYouEmployed}" ></span><br />
+DegreeEarned :<span th:text="${bootCamp.degreeEarned}" ></span><br />
+NameofSchool :<span th:text="${bootCamp.nameofSchool}" ></span><br /><br /><br />
+whichBootCampwouldyouliketoapply:<span th:text="${bootCamp.whichBootCampwouldyouliketoapply}" ></span><br />
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
