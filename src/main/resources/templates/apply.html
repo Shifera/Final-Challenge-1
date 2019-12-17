@@ -25,8 +25,12 @@
     }
 p{
     font-size: large;
+
 }
-    form {
+a{
+    color: white;
+}
+   form {
         text-align: center;
     }
 
@@ -34,7 +38,12 @@ form{
     font-size: 20px;
    color: white;
 }
-
+input{
+    color: black;
+}
+div{
+    color: white;
+}
 </style>
 
 <body>
@@ -44,7 +53,13 @@ form{
 <div th:replace="base :: navbar"></div>
 <br/>
 <br/>
-
+<div><input type="checkbox" name="vehicle1" value="Bike" >Cyber Boot Camp <br></a>
+<input type="checkbox" name="vehicle2" value="Car"> Java Web Developer Boot Camp<br>
+<input type="checkbox" name="vehicle3" value="Boat" checked> Data Analytics Boot Camp<br>
+<input type="checkbox" name="vehicle1" value="Bike"> Java Mini Boot Camp<br>
+<input type="checkbox" name="vehicle2" value="Car"> Mobile Boot Camp(Summer Only)<br>
+<input type="checkbox" name="vehicle3" value="Boat" checked> Immersive Data analytics Boot Camp<br></div>
+<br/>
 <form action="#" th:action="@{/add}" th:object="${bootCamp}" method="post">
     <input type="hidden" th:field="*{id}" />
     Boot camp:<input type="text" th:field="*{whichBootCampwouldyouliketoapply}" />
