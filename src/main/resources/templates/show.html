@@ -11,9 +11,10 @@
             color:blue;
         }
         a:hover{
-            color:hotpink;
+            color:maroon;
         }
        a{
+           color: black;
            text-align: center;
        }
         a:visited{
@@ -36,16 +37,18 @@
 <div th:replace="base :: navbar"></div>
 
 <a href="/">Show All bootCamp</a><br/>
-Fist Name:<span th:text="${bootCamp.firstName}" ></span><br /><br />
-Last Name :<span th:text="${bootCamp.lastName}" ></span><br />
+
+
+FistName:<span th:text="${bootCamp.firstName}" ></span><br/>
+LastName :<span th:text="${bootCamp.lastName}" ></span><br />
 Email :<span th:text="${bootCamp.email}" ></span><br />
 Phone :<span th:text="${bootCamp.phone}" ></span><br />
 DateofBirth :<span th:text="${bootCamp.dateofBirth}" ></span><br />
 WorkPermit :<span th:text="${bootCamp.workPermit}" ></span><br />
 Veteran :<span th:text="${bootCamp.veteran}" ></span><br />
 AreYouEmployed :<span th:text="${bootCamp.areYouEmployed}" ></span><br />
+NameofSchool :<span th:text="${bootCamp.nameofSchool}" ></span><br />
 DegreeEarned :<span th:text="${bootCamp.degreeEarned}" ></span><br />
-NameofSchool :<span th:text="${bootCamp.nameofSchool}" ></span><br /><br /><br />
 whichBootCampwouldyouliketoapply:<span th:text="${bootCamp.whichBootCampwouldyouliketoapply}" ></span><br />
 
 
