@@ -17,7 +17,7 @@
 
 
      background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/7ae00b10518709.560e63ae4883b.jpg");
-
+     background-size: 2400px 1000px;
     }
 
     input{
@@ -62,59 +62,60 @@ div{
 <br/>
 <form action="#" th:action="@{/add}" th:object="${bootCamp}" method="post">
     <input type="hidden" th:field="*{id}" />
-    Boot camp:<input type="text" th:field="*{whichBootCampwouldyouliketoapply}" />
+    Boot camp:<br/>
+    <input type="text" th:field="*{whichBootCampwouldyouliketoapply}" />
 
     <span th:if="${#fields.hasErrors('whichBootCampwouldyouliketoapply')}"
     th:errors="*{whichBootCampwouldyouliketoapply}"></span><br />
     <br/>
     <br/>
-    First Name:<input type="text" th:field="*{firstName}" />
+    First Name:<br/><input type="text" th:field="*{firstName}" />
     <span th:if="${#fields.hasErrors('firstName')}"
               th:errors="*{firstName}"></span><br />
     <br/>
     <br/>
-    Last Name:<input type="text" th:field="*{lastName}" />
+    Last Name:<br/><input type="text" th:field="*{lastName}" />
         <span th:if="${#fields.hasErrors('lastName')}"
               th:errors="*{lastName}"></span><br />
     <br/>
     <br/>
-    Email : <textarea rows="1" th:field="*{email}" />
+    Email :<br/> <textarea rows="1" th:field="*{email}" />
         <span th:if="${#fields.hasErrors('email')}"
               th:errors="*{email}"></span> <br />
     <br/>
     <br/>
-    Phone:<input type="number" th:field="*{phone}" />
+    Phone:<br/><input type="number" th:field="*{phone}" />
         <span th:if="${#fields.hasErrors('phone')}"
               th:errors="*{phone}"></span><br />
     <br/>
     <br/>
-    Date of Birth:<input type="number" th:field="*{dateofBirth}" />
+    Date of Birth:<br/><input type="number" th:field="*{dateofBirth}" />
         <span th:if="${#fields.hasErrors('dateofBirth')}"
               th:errors="*{dateofBirth}"></span><br />
     <br/>
     <br/>
-    Work Permit:<input type="text" th:field="*{workPermit}" />
+    Work Permit:<br/><input type="text" th:field="*{workPermit}" />
         <span th:if="${#fields.hasErrors('workPermit')}"
               th:errors="*{workPermit}"></span><br />
     <br/>
     <br/>
-    Veteran :<input type="text" th:field="*{veteran}" />
+    Veteran :<br/><input type="text" th:field="*{veteran}" />
         <span th:if="${#fields.hasErrors('veteran')}"
               th:errors="*{veteran}"></span><br />
     <br/>
     <br/>
-    Are You Employed :<input type="text" th:field="*{areYouEmployed}" />
+    Are You Employed :<br/><input type="text" th:field="*{areYouEmployed}" />
         <span th:if="${#fields.hasErrors('areYouEmployed')}"
               th:errors="*{areYouEmployed}"></span><br />
     <br/>
     <br/>
-    Name of School :<input type="text" th:field="*{nameofSchool}" />
+    Name of School :<br/><input type="text" th:field="*{nameofSchool}" />
         <span th:if="${#fields.hasErrors('nameofSchool')}"
               th:errors="*{nameofSchool}"></span><br />
     <br/>
     <br/>
 
-    Degree Earned :<input type="text" th:field="*{degreeEarned}" />
+    Degree Earned :<br/><input type="text" th:field="*{degreeEarned}" />
         <span th:if="${#fields.hasErrors('degreeEarned')}"
               th:errors="*{degreeEarned}"></span><br />
 <br/>

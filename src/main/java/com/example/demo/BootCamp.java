@@ -28,19 +28,19 @@ public class BootCamp {
     private String Email;
 
     @NotNull
-    private int Phone;
+    private String Phone;
 
     @NotNull
 
-    private int DateofBirth;
+    private String DateofBirth;
     @NotNull
-    private boolean WorkPermit;
+    private String WorkPermit;
 
     @NotNull
-    private boolean Veteran;
+    private String Veteran;
 
     @NotNull
-    private boolean AreYouEmployed;
+    private String AreYouEmployed;
 
     @NotNull
     @Size(min = 2)
@@ -54,7 +54,7 @@ public class BootCamp {
     public BootCamp() {
     }
 
-    public BootCamp(@NotNull @Size(min = 2) String whichBootCampwouldyouliketoapply, @NotNull @Size(min = 2) String firstName, @NotNull @Size(min = 2) String lastName, @NotNull @Size(min = 1) String email, @NotNull int phone, @NotNull int dateofBirth, @NotNull boolean workPermit, @NotNull boolean veteran, @NotNull boolean areYouEmployed, @NotNull @Size(min = 2) String nameofSchool, @NotNull @Size(min = 1) String degreeEarned) {
+    public BootCamp(@NotNull @Size(min = 2) String whichBootCampwouldyouliketoapply, @NotNull @Size(min = 2) String firstName, @NotNull @Size(min = 2) String lastName, @NotNull @Size(min = 1) String email, @NotNull String phone, @NotNull String dateofBirth, @NotNull String workPermit, @NotNull String veteran, @NotNull String areYouEmployed, @NotNull @Size(min = 2) String nameofSchool, @NotNull @Size(min = 1) String degreeEarned) {
         WhichBootCampwouldyouliketoapply = whichBootCampwouldyouliketoapply;
         FirstName = firstName;
         LastName = lastName;
@@ -108,43 +108,43 @@ public class BootCamp {
         Email = email;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         Phone = phone;
     }
 
-    public int getDateofBirth() {
+    public String getDateofBirth() {
         return DateofBirth;
     }
 
-    public void setDateofBirth(int dateofBirth) {
+    public void setDateofBirth(String dateofBirth) {
         DateofBirth = dateofBirth;
     }
 
-    public boolean isWorkPermit() {
+    public String getWorkPermit() {
         return WorkPermit;
     }
 
-    public void setWorkPermit(boolean workPermit) {
+    public void setWorkPermit(String workPermit) {
         WorkPermit = workPermit;
     }
 
-    public boolean isVeteran() {
+    public String getVeteran() {
         return Veteran;
     }
 
-    public void setVeteran(boolean veteran) {
+    public void setVeteran(String veteran) {
         Veteran = veteran;
     }
 
-    public boolean isAreYouEmployed() {
+    public String getAreYouEmployed() {
         return AreYouEmployed;
     }
 
-    public void setAreYouEmployed(boolean areYouEmployed) {
+    public void setAreYouEmployed(String areYouEmployed) {
         AreYouEmployed = areYouEmployed;
     }
 
